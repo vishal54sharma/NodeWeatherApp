@@ -70,7 +70,10 @@ app.get("/weather",(req,res)=>{
                             location:data.location,
                             temperature:forecastdata.temperature,
                             description:forecastdata.description,
-                            feelslike:forecastdata.feelslike
+                            feelslike:forecastdata.feelslike,
+                            wind_speed:forecastdata.wind_speed,
+                            wind_dir:forecastdata.winddir,
+                            pressure:forecastdata.pressure
                         })                       
                     }
                 })

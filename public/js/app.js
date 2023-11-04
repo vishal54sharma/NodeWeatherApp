@@ -14,7 +14,7 @@ weatherform.addEventListener("submit",(e)=>{
         if(!data.error){
             
             
-            p1.textContent="Its "+data.temperature+"F in "+ data.location+" . Weather is "+data.description[0]+" and it feels like "+data.feelslike+" F"
+            p1.textContent="Its "+data.temperature+"F in "+ data.location+" . Weather is "+data.description[0]+" and it feels like "+data.feelslike+" F. Wind Speed is "+data.wind_speed+" with pressure "+data.pressure
             p2.textContent=""
         }
         else{

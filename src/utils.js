@@ -32,10 +32,13 @@ const weatherforecast=(lat,long,callback)=>{
                    
         }else{
             const data = (response.body)
+           
             callback(undefined,{
                 description: data.current.weather_descriptions,
                 temperature: data.current.temperature,
-                feelslike: data.current.feelslike
+                feelslike: data.current.feelslike,
+                wind_speed: data.current.wind_speed,
+                pressure: data.current.pressure
             })
             
             
